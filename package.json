@@ -1,0 +1,17 @@
+{
+  "name": "console.pretty",
+  "version": "0.1.0",
+  "description": "console.log with pretty colors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "color",
+    "colors"
+  ],
+  "author": "Brian Vaughn <brian.david.vaughn@gmail.com>",
+  "license": "MIT"
+}
