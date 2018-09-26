@@ -21,5 +21,20 @@
   "bugs": {
     "url": "https://github.com/bvaughn/console.pretty/issues"
   },
-  "homepage": "https://github.com/bvaughn/console.pretty#readme"
+  "homepage": "https://github.com/bvaughn/console.pretty#readme",
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid",
+    "proseWrap": "preserve"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
 }
