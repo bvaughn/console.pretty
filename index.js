@@ -70,4 +70,5 @@ var log = {
 
 module.exports = _extends({}, log, {
   default: log,
+  createLogger: createLogger,
 });
