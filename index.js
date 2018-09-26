@@ -1,5 +1,21 @@
 "use strict";
 
+var _extends =
+  Object.assign ||
+  function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
 var createLogger = function createLogger(backgroundColor, color) {
   var logger = function logger(message) {
     var _console;
@@ -52,4 +68,6 @@ var log = {
   yellow: createLogger("#FFD600", "#FFF59D"),
 };
 
-module.exports = log;
+module.exports = _extends({}, log, {
+  default: log,
+});
