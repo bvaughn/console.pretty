@@ -1,8 +1,6 @@
 const createLogger = (backgroundColor, color) => {
   const logger = (message, ...args) => {
-    if (logger.enabled === false) {
-      return;
-    }
+    if (logger.enabled === false) return;
 
     console.groupCollapsed(
       `%c${message}`,
@@ -29,7 +27,10 @@ const log = {
   red: createLogger("#E53935", "#EF9A9A"),
   orange: createLogger("#F4511E", "#FFAB91"),
   purple: createLogger("#8E24AA", "#E1BEE7"),
-  yellow: createLogger("#FFD600", "#FFF59D")
+  yellow: createLogger("#FFD600", "#FFF59D"),
 };
 
-module.exports = log;
+module.exports = Object.assign({}, log, {
+  default: log,
+  createLogger: createLogger,
+});
